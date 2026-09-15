@@ -1,15 +1,29 @@
-<!DOCTYPE html>
+<!DOCTYPE html>     
 <html lang="id">
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>Kopi Nusa - website umkm</title>
+        <title>Kopi Nusa - Beranda</title>
         <link rel="stylesheet" href="css/style.css"/>
     </head>
 
     <body>
+        <header class="site-header">
+            <div class="nav-container">
+                <span class="logo">Kopi Nusa</span>
+                <nav aria-label="Navigasi Utama">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link active">Beranda</a></li>
+                        <li><a href="tentang.html" class="nav-link">Tentang Kami</a></li>
+                        <li><a href="#profil" class="nav-link">Profil</a></li>
+                        <li><a href="#kontak" class="nav-link">Kontak</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
         <main class="page">
-            <section class="hero">
+            <section id="profil" class="hero">
                 <p class="eyebrow">UMKM Pekalongan</p>
                 <h1>Kopi Nusa</h1>
                 <p>kopi lokal pilihan orang bijak</p>
@@ -18,25 +32,57 @@
 
             <section aria-labelledby="produk-title">
                 <h2 id="produk-title">Produk Unggulan</h2>
-                <ul class="products">
-                    <li>Kopi Tubruk Signature Rp18.000</li>
-                    <li>Cold Brew Aren Rp22.000</li>
-                    <li>Kopi Nusa Blend Rp20.000</li>
-                </ul>
+                <div class="products-grid">
+                    <article class="product-card">
+                        <img src="https://i.imgur.com/GQK8hvw.jpeg" alt="Secangkir kopi tubruk hitam panas khas nusantara" class="product-img"/>
+                        <h3>Kopi Tubruk Signature</h3>
+                        <p>Rp18.000</p>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="https://i.imgur.com/hnMQEDv.jpeg" alt="Gelas es cold brew dengan gula aren kental" class="product-img"/>
+                        <h3>Cold Brew Aren</h3>
+                        <p>Rp22.000</p>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="https://i.imgur.com/OFP9lfJ.jpeg" alt="Biji kopi sangrai racikan blend khas Kajen" class="product-img"/>
+                        <h3>Kopi Nusa Blend</h3>
+                        <p>Rp20.000</p>
+                    </article>
+                </div>
             </section>
 
             <section aria-labelledby="info-title">
                 <h2 id="info-title">Jam Buka &amp; Lokasi</h2>
 
                 <h3>Jam Buka</h3>
-                <p>Senin - Jumat: 09.00 - 23.00 WIB</p>
-                <p>Sabtu - Minggu: 10.00 - 00.00 WIB</p>
+                <p>Senin – Jumat: 09.00 – 23.00 WIB</p>
+                <p>Sabtu – Minggu: 10.00 – 00.00 WIB</p>
 
                 <h3>Lokasi</h3>
                 <p>JL Bina Griya Raya, Kota Pekalongan, Jawa Tengah 51116</p>
                 <p>Kunjungi Kopi Nusa untuk menikmati kopi lokal pilihan.</p>
             </section>
+
+            <section id="kontak" class="contact-section" aria-labelledby="kontak-title">
+                <h2 id="kontak-title">Kontak Singkat</h2>
+                <p>Hubungi layanan resmi Kopi Nusa untuk pesanan atau informasi:</p>
+                <ul class="contact-list">
+                    <li><strong>Kota Layanan:</strong> Pekalongan dan sekitarnya</li>
+                    <li><strong>Jam Layanan Chat:</strong> 09.00 – 21.00 WIB</li>
+                    <li>
+                        <strong>Kanal WhatsApp:</strong>
+                        <a href="https://wa.me/6281809446101" target="_blank" rel="noopener">Kirim pesan WhatsApp ke Admin Kopi Nusa</a>
+                    </li>
+                </ul>
+            </section>
         </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Kopi Nusa. Seluruh hak cipta dilindungi.</p>
+        </footer>
+
         <script src="js/script.js"></script>
     </body>
 </html>
