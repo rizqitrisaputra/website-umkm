@@ -124,3 +124,41 @@ button {
     font-size: 0.85rem;
     color: #7d6b5e;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 0 0 24px;
+}
+
+figcaption {
+    margin-top: 8px;
+    color: #6b5b52;
+    font-size: 0.9rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+caption {
+    margin-bottom: 8px;
+    font-weight: 700;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #dccbbc;
+}
+
+th {
+    background-color: #f1e7dd;
+}
