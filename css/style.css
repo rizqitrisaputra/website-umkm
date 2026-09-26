@@ -44,6 +44,10 @@ body {
     text-decoration: underline;
 }
 
+html {
+    scrollbar-gutter: stable;
+}
+
 a:focus-visible,
 button:focus-visible {
     outline: 3px solid #aa3d02;
@@ -162,3 +166,77 @@ td {
 th {
     background-color: #f1e7dd;
 }
+
+.field { 
+    margin-bottom: 16px; 
+}
+
+.field label { 
+    display: block; 
+    margin-bottom: 6px; 
+    font-weight: 600;
+}
+
+.field input[type="text"],
+.field input[type="email"],
+.field input[type="tel"],
+.field select,
+.field textarea {
+    width: 100%;
+    max-width: 480px;
+    padding: 10px;
+    border: 1px solid #dccbbc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+fieldset { 
+    margin: 0 0 16px; 
+    border: 1px solid #dccbbc;
+    border-radius: 6px;
+    padding: 12px 16px;
+    max-width: 480px;
+}
+
+fieldset legend {
+    font-weight: 600;
+    padding: 0 4px;
+}
+
+fieldset label {
+    display: block;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+#preview-form { 
+    padding: 16px; 
+    white-space: pre-wrap; 
+    background: #ffffff; 
+    border: 1px solid #dccbbc; 
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 16px;
+}
+
+/* Ukuran kartu media */
+.media-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin: 0;
+    flex: 1 1 280px; /* Lebar minimum kartu agar seragam */
+    display: flex;
+    flex-direction: column;
+}
+
