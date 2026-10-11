@@ -24,16 +24,19 @@
         </header>
 
         <main class="page">
-            <section id="profil" class="hero">
-                <p class="eyebrow">UMKM Pekalongan</p>
-                <h1>Kopi Nusa</h1>
-                <p>kopi lokal pilihan orang bijak</p>
-                <button id="promo-button" type="button">Lihat promo hari ini</button>
-                <img 
-                    src="assets/images/herokopi.jpg" 
-                    alt="Tiga kemasan produk kopi di atas meja kayu dengan biji kopi dan gula aren" 
-                    class="hero-img"
-                />
+            <section class="hero" aria-labelledby="hero-title">
+                <div class="hero-content">
+                    <p class="eyebrow">UMKM Pekalongan</p>
+                    <h1 id="hero-title">Kopi Nusa</h1>
+                    <p>Kopi lokal pilihan untuk teman belajar, bekerja, dan berdiskusi.</p>
+                    
+                    <button id="promoButton" type="button">Lihat promo hari ini</button>
+                    
+                    <p id="promoMessage" class="promo-message" style="margin-top: 0.75rem; font-weight: 600;"></p>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/images/herokopi.jpg" alt="Etalase Kopi Nusa" />
+                </div>
             </section>
 
             <section aria-labelledby="produk-title">

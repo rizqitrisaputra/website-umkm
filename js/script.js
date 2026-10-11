@@ -1,4 +1,4 @@
-const promoButton = document.querySelector("#promo-button");
+const promoButton = document.querySelector("#promoButton");
 
 promoButton.addEventListener("click", () => {
     promoButton.textContent = "Promo: Beli 2 Kopi Tubruk Gratis Tester!";
