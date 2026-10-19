@@ -9,19 +9,29 @@
 </head>
 <body>
     <header class="site-header">
-        <div class="nav-container">
-            <span class="logo">Kopi Nusa</span>
-            <nav aria-label="Navigasi Utama">
-                <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link">Beranda</a></li>
-                    <li><a href="tentang.html" class="nav-link">Tentang Kami</a></li>
-                    <li><a href="produk.html" class="nav-link">Produk</a></li>
-                    <li><a href="galeri.html" class="nav-link">Galeri</a></li>
-                    <li><a href="kontak.html" class="nav-link active" aria-current="page">Kontak</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+        <header class="site-header">
+            <div class="nav-container">
+                <span class="logo">Kopi Nusa</span>
+                
+                <!-- Toggle Checkbox & Tombol Menu -->
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Buka navigasi menu" />
+                <label for="nav-toggle" class="nav-toggle-label" aria-label="Buka menu navigasi">
+                    <span class="hamburger-icon" aria-hidden="true">☰</span>
+                    <span>Menu</span>
+                </label>
+
+                <!-- Dropdown Card Navigasi -->
+                <nav aria-label="Navigasi Utama" class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link active" aria-current="page">Beranda</a></li>
+                        <li><a href="tentang.html" class="nav-link">Tentang Kami</a></li>
+                        <li><a href="produk.html" class="nav-link">Produk</a></li>
+                        <li><a href="galeri.html" class="nav-link">Galeri</a></li>
+                        <li><a href="kontak.html" class="nav-link">Kontak</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
     <main id="konten" class="page">
         <h1>Kontak Kopi Nusa</h1>
@@ -44,7 +54,6 @@
                 <input id="telepon" name="telepon" type="tel" autocomplete="tel" placeholder="Contoh: 081234567890" required />
             </div>
 
-          
             <div class="field">
                 <label for="paket">Paket yang diminati</label>
                 <select id="paket" name="paket" required>
@@ -55,7 +64,6 @@
                 </select>
             </div>
 
-
             <fieldset>
                 <legend>Topik pertanyaan</legend>
                 <label><input type="radio" name="topik" value="produk" required /> Informasi produk</label>
@@ -63,7 +71,6 @@
                 <label><input type="radio" name="topik" value="kerja-sama" /> Kerja sama</label>
             </fieldset>
 
-  
             <fieldset>
                 <legend>Waktu kontak yang diinginkan</legend>
                 <label><input type="radio" name="waktu_kontak" value="pagi" required /> Pagi (09.00 - 12.00 WIB)</label>

@@ -6,21 +6,31 @@
     <title>Galeri Kopi Nusa - Website UMKM</title>
     <link rel="stylesheet" href="css/style.css"/>
 </head>
+
 <body>
     <header class="site-header">
-    <div class="nav-container">
-        <span class="logo">Kopi Nusa</span>
-        <nav aria-label="Navigasi Utama">
-            <ul class="nav-links">
-                <li><a href="index.html" class="nav-link">Beranda</a></li>
-                <li><a href="tentang.html" class="nav-link">Tentang Kami</a></li>
-                <li><a href="produk.html" class="nav-link">Produk</a></li>
-                <li><a href="galeri.html" class="nav-link active" aria-current="page">Galeri</a></li>
-                <li><a href="kontak.html" class="nav-link">Kontak</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+        <div class="nav-container">
+            <span class="logo">Kopi Nusa</span>
+            
+            <!-- Toggle Checkbox & Tombol Menu -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Buka navigasi menu" />
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Buka menu navigasi">
+                <span class="hamburger-icon" aria-hidden="true">☰</span>
+                <span>Menu</span>
+            </label>
+
+            <!-- Dropdown Card Navigasi -->
+            <nav aria-label="Navigasi Utama" class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link active" aria-current="page">Beranda</a></li>
+                    <li><a href="tentang.html" class="nav-link">Tentang Kami</a></li>
+                    <li><a href="produk.html" class="nav-link">Produk</a></li>
+                    <li><a href="galeri.html" class="nav-link">Galeri</a></li>
+                    <li><a href="kontak.html" class="nav-link">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <main id="konten" class="page">
         <h1>Galeri Kopi Nusa</h1>
