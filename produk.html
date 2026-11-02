@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Produk Kopi Nusa - Website UMKM</title>
     <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/app.js" defer></script>
 </head>
 
 <body>
@@ -12,19 +13,17 @@
         <div class="nav-container">
             <span class="logo">Kopi Nusa</span>
             
-            <!-- Toggle Checkbox & Tombol Menu -->
             <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Buka navigasi menu" />
             <label for="nav-toggle" class="nav-toggle-label" aria-label="Buka menu navigasi">
                 <span class="hamburger-icon" aria-hidden="true">☰</span>
                 <span>Menu</span>
             </label>
 
-            <!-- Dropdown Card Navigasi -->
             <nav aria-label="Navigasi Utama" class="nav-menu">
                 <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link active" aria-current="page">Beranda</a></li>
+                    <li><a href="index.html" class="nav-link">Beranda</a></li>
                     <li><a href="tentang.html" class="nav-link">Tentang Kami</a></li>
-                    <li><a href="produk.html" class="nav-link">Produk</a></li>
+                    <li><a href="produk.html" class="nav-link active" aria-current="page">Produk</a></li>
                     <li><a href="galeri.html" class="nav-link">Galeri</a></li>
                     <li><a href="kontak.html" class="nav-link">Kontak</a></li>
                 </ul>
@@ -35,6 +34,15 @@
     <main id="konten" class="page">
         <h1>Produk Kopi Nusa</h1>
         <p>Pilih produk sesuai kebutuhan seduh harian, kebutuhan kantor, atau paket hadiah.</p>
+
+        <section aria-labelledby="produk-dinamis-title">
+            <div class="section-header">
+                <p class="eyebrow">Data JavaScript</p>
+                <h2 id="produk-dinamis-title">Katalog Produk Dinamis</h2>
+                <p id="produk-ringkasan">Memuat data produk...</p>
+            </div>
+            <div id="produk-dinamis" class="js-product-grid"></div>
+        </section>
 
         <section aria-labelledby="kategori-title">
             <h2 id="kategori-title">Kategori Produk</h2>
@@ -59,40 +67,41 @@
             </figure>
         </section>
 
-<section aria-labelledby="harga-title">
-    <h2 id="harga-title">Daftar Harga</h2>
-        <div class="table-scroll" role="region" aria-labelledby="daftar-harga-caption" tabindex="0">
-            <table>
-                <caption id="daftar-harga-caption">Daftar harga produk Kopi Nusa</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Produk</th>
-                        <th scope="col">Ukuran</th>
-                        <th scope="col">Harga</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Kopi Tubruk Signature</th>
-                        <td>250 gram</td>
-                        <td>Rp45.000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Cold Brew Aren</th>
-                        <td>Botol 250 ml</td>
-                        <td>Rp22.000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Kopi Nusa Blend</th>
-                        <td>200 gram</td>
-                        <td>Rp35.000</td>
-                    </tr>
-        </table>
-    </div> 
-</section>
+        <section aria-labelledby="harga-title">
+            <h2 id="harga-title">Daftar Harga</h2>
+            <div class="table-scroll" role="region" aria-labelledby="daftar-harga-caption" tabindex="0">
+                <table>
+                    <caption id="daftar-harga-caption">Daftar harga produk Kopi Nusa</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Produk</th>
+                            <th scope="col">Ukuran</th>
+                            <th scope="col">Harga</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Kopi Tubruk Signature</th>
+                            <td>250 gram</td>
+                            <td>Rp45.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cold Brew Aren</th>
+                            <td>Botol 250 ml</td>
+                            <td>Rp22.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Kopi Nusa Blend</th>
+                            <td>200 gram</td>
+                            <td>Rp35.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> 
+        </section>
 
         <section aria-labelledby="produk-pilihan-title">
-            <h2 id="produk-pilihan-title">Produk Pilihan</h2>
+            <h2 id="produk-pilihan-title">Produk Pilihan (Statis)</h2>
             <div class="product-grid">
                 <article class="product-card">
                     <span class="product-badge">Terlaris</span>

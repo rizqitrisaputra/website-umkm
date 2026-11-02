@@ -5,40 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Kontak Kopi Nusa - Website UMKM</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/app.js" defer></script>
     <script src="js/form.js" defer></script>
 </head>
 <body>
     <header class="site-header">
-        <header class="site-header">
-            <div class="nav-container">
-                <span class="logo">Kopi Nusa</span>
-                
-                <!-- Toggle Checkbox & Tombol Menu -->
-                <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Buka navigasi menu" />
-                <label for="nav-toggle" class="nav-toggle-label" aria-label="Buka menu navigasi">
-                    <span class="hamburger-icon" aria-hidden="true">☰</span>
-                    <span>Menu</span>
-                </label>
+        <div class="nav-container">
+            <span class="logo">Kopi Nusa</span>
+            
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Buka navigasi menu" />
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Buka menu navigasi">
+                <span class="hamburger-icon" aria-hidden="true">☰</span>
+                <span>Menu</span>
+            </label>
 
-                <!-- Dropdown Card Navigasi -->
-                <nav aria-label="Navigasi Utama" class="nav-menu">
-                    <ul class="nav-links">
-                        <li><a href="index.html" class="nav-link active" aria-current="page">Beranda</a></li>
-                        <li><a href="tentang.html" class="nav-link">Tentang Kami</a></li>
-                        <li><a href="produk.html" class="nav-link">Produk</a></li>
-                        <li><a href="galeri.html" class="nav-link">Galeri</a></li>
-                        <li><a href="kontak.html" class="nav-link">Kontak</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+            <nav aria-label="Navigasi Utama" class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Beranda</a></li>
+                    <li><a href="tentang.html" class="nav-link">Tentang Kami</a></li>
+                    <li><a href="produk.html" class="nav-link">Produk</a></li>
+                    <li><a href="galeri.html" class="nav-link">Galeri</a></li>
+                    <li><a href="kontak.html" class="nav-link active" aria-current="page">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <main id="konten" class="page">
         <h1>Kontak Kopi Nusa</h1>
         <p>Silakan kirim pertanyaan tentang produk, pesanan, atau kerja sama bersama Kopi Nusa.</p>
 
         <form id="form-kontak" action="#" method="post">
-
             <div class="field">
                 <label for="nama">Nama lengkap</label>
                 <input id="nama" name="nama" type="text" autocomplete="name" required minlength="3" />
