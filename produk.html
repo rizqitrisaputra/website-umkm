@@ -35,14 +35,20 @@
         <h1>Produk Kopi Nusa</h1>
         <p>Pilih produk sesuai kebutuhan seduh harian, kebutuhan kantor, atau paket hadiah.</p>
 
-        <section aria-labelledby="produk-dinamis-title">
-            <div class="section-header">
-                <p class="eyebrow">Data JavaScript</p>
-                <h2 id="produk-dinamis-title">Katalog Produk Dinamis</h2>
-                <p id="produk-ringkasan">Memuat data produk...</p>
-                <p id="produk-unggulan">Memuat produk unggulan...</p>
+        <section class="product-section" aria-labelledby="produk-title">
+            <div class="section-heading">
+                <h2 id="produk-title">Katalog Produk Dinamis</h2>
+                <p id="produk-status" class="produk-status">Produk belum dimuat.</p>
             </div>
-            <div id="produk-dinamis" class="js-product-grid"></div>
+
+            <div class="filter-bar" aria-label="Filter kategori produk">
+                <button type="button" class="filter-button is-active" data-filter="Semua">Semua</button>
+                <button type="button" class="filter-button" data-filter="Kopi">Kopi</button>
+                <button type="button" class="filter-button" data-filter="Bundling">Bundling</button>
+                <button type="button" class="filter-button" data-filter="Makanan">Makanan</button>
+            </div>
+
+            <div id="produk-grid" class="product-grid" aria-live="polite"></div>
         </section>
 
         <section aria-labelledby="kategori-title">
